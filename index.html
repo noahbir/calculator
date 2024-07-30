@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+
+            <!-- top row with input field -->
+            <div class="row-container">
+                <div class="row-item">
+                    <label for="number"></label>
+                    <input type="text" id="number" name="number" placeholder="Enter number">
+                </div>
+            </div>
+            
+            <!-- first row with 4 boxes (7, 8, 9, / ) -->
+            <div class="row-container">
+                <div class="row-item">
+                    <button type="button" data-value="9">9</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" data-value="8">8</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" data-value="7">7</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" data-value="/">/</button>
+                </div>
+            </div>
+
+            <!-- second row with 4 boxes (6, 5, 4, *) -->
+            <div class="row-container">
+                <div class="row-item">
+                    <button type="button" data-value="6">6</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" data-value="5">5</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" data-value="4">4</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" data-value="*">*</button>
+                </div>
+            </div>
+
+            <!-- third row with 4 boxes (3, 2, 1, -) -->
+            <div class="row-container">
+                <div class="row-item">
+                    <button type="button" data-value="3">3</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" data-value="2">2</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" data-value="1">1</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" data-value="-">-</button>
+                </div>
+            </div>
+
+            <!-- fourth row with 3 boxes (0, =, +) -->
+            <div class="row-container">
+                <div class="row-item">
+                    <button type="button" data-value="0">0</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" id="clear">C</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" id="equal">=</button>
+                </div>
+                <div class="row-item">
+                    <button type="button" data-value="+">+</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
